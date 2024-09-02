@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 1116072407}
   - component: {fileID: 1116072408}
   - component: {fileID: 9121533680715404522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: snake
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1116072408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0243082b24ef544be03a32b8750dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  animator: {fileID: 4621250975996747006}
+  DeathAnimationWaitTime: 0.2
+  explosion: {fileID: 4792825621010396245, guid: bbbc919077c6e664498715b65838a077, type: 3}
   snakeBody: {fileID: 1116072407}
 --- !u!61 &9121533680715404522
 BoxCollider2D:

@@ -10,6 +10,7 @@ public class SnakeBehavior : Enemy
     // Start is called before the first frame update
     protected override void Start()
     {
+        scoreReward = 50;
         health = 1f;
         moveForce = -4f;
         body = snakeBody;

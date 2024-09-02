@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6121814384192378670}
   - component: {fileID: 1397628040}
   - component: {fileID: 1397628041}
-  m_Layer: 0
+  - component: {fileID: -5139299356113960410}
+  m_Layer: 8
   m_Name: snail
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,7 +128,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1397628041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,4 +141,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8398e1ffcfd284143b1950007704fbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  animator: {fileID: 6121814384192378670}
+  DeathAnimationWaitTime: 0.2
+  explosion: {fileID: 4792825621010396245, guid: bbbc919077c6e664498715b65838a077, type: 3}
   snailBody: {fileID: 1397628040}
+--- !u!61 &-5139299356113960410
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256338905881483065}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.55, y: 0.4}
+    newSize: {x: 0.55, y: 0.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.55, y: 0.4}
+  m_EdgeRadius: 0

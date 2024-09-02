@@ -3,17 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
+  - Enemy
+  - Audio
+  - EnemyExplosion
+  - Barrier
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player Layer
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Snake Layer
+  - Slime Layer
+  - Snail Layer
   - 
   - 
   - 

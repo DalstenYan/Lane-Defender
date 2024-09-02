@@ -10,6 +10,7 @@ public class SlimeBehavior : Enemy
     // Start is called before the first frame update
     protected override void Start()
     {
+        scoreReward = 150;
         health = 5f;
         moveForce = -1f;
         body = slimeBody;
